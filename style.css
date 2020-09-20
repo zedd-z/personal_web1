@@ -46,9 +46,9 @@
   }
   
   .logo{
-    width: 44px;
-    height: 32px;
-    background-image: url(white-logo.png);
+    width: 60px;
+    height: 40px;
+    background-image: url(intro/logo1.png);
     background-size: contain;
   }
   
@@ -90,7 +90,7 @@
   }
   
   .sticky .logo{
-    background-image: url(black-logo.png);
+    background-image: url(intro/logo2.png);
   }
   
   .sticky .navbar-menu a{
@@ -104,7 +104,7 @@
   #home{
     height: 100vh;
     min-height: 500px;
-    background: url(roofidk.jpeg) no-repeat center;
+    background: url(intro/background.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -128,31 +128,50 @@
   }
   
   #home .content h1::after{
-    content: "A Good Man";
+    content: "Zedd";
     animation: textanim 10s linear infinite;
   }
   
   @keyframes textanim{
-    25%{
+    20%{
       content: "A Developer";
     }
-    50%{
+    40%{
       content: "A Designer";
     }
-    75%{
+    60%{
       content: "A Photographer";
+    }
+    80%{
+      content: "A UofT Student";
     }
   }
   
-  .sm a{
+  .lg{
+    display: inline-flex;
+  }
+
+  .lg a{
     color: #fff;
     font-size: 22px;
     margin: 0 10px;
     transition: .2s linear;
   }
   
-  .sm a:hover{
-    color: #48dbfb;
+  .lg .lg1 a:hover{
+    color: #000000;
+  }
+  .lg .lg2 a:hover{
+    color: #f736bd;
+  }
+  .lg .lg3 a:hover{
+    color: #ffc508;
+  }
+  .lg .lg4 a:hover{
+    color: #4eff57;
+  }
+  .lg .lg5 a:hover{
+    color: #0ebbff;
   }
   
   #home .buttons{
@@ -261,9 +280,14 @@
     flex-wrap: wrap;
   }
   
+.skillpart{
+  display: flex;
+  margin-top: 10px;
+}
+
   .skill{
     width: calc(50% - 20px);
-    margin: 15px 0;
+    margin: 15px 15px;
   }
   
   .skill-info{
@@ -414,7 +438,7 @@
   .work{
     width: calc(33% - 10px);
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 10px;
     margin: 10px 0;
     cursor: pointer;
     position: relative;
@@ -423,7 +447,7 @@
   .work img{
     width: 100%;
     height: 100%;
-    transition: .4s linear;
+    transition: .3s linear;
   }
   
   .work::before{
@@ -444,12 +468,12 @@
     bottom: 40px;
     left: 40px;
     color: #fff;
-    transition: .4s linear;
+    transition: .3s linear;
     opacity: 0;
   }
   
   .work:hover img{
-    transform: scale(1.6) rotate(25deg);
+    transform: scale(1.3); /*rotate(25deg); */
   }
   
   .work:hover::before,
@@ -533,7 +557,7 @@
   }
   
   footer{
-    background: url(roofidk.jpeg) no-repeat center;
+    background: url(intro/background2.jpg) no-repeat center;
     color: #fff;
     padding: 80px 0px;
     text-align: center;
