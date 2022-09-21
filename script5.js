@@ -4,6 +4,12 @@ $(document).ready(function () {
     dots: true,
     centerMode: true
   });
+
+    $(".option").click(function () {
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+    });
+
 });
 
 
